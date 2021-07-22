@@ -34,6 +34,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <script>
+    var sound= new Audio();
+    sound.src = "assets/patapata.mp3";
+  </script>
 </head>
 
 <body>
@@ -58,7 +63,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a href="#about" class="btn-get-started scrollto">Lessgoooo</a>
+        <a href="#about" onmousedown="sound.play()" class="btn-get-started scrollto">Lessgoooo</a>
       </div>
 
       <div class="row icon-boxes">
