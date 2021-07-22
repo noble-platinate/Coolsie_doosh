@@ -37,7 +37,11 @@
 
   <script>
     var sound= new Audio();
+    var about= new Audio();
+    var video= new Audio();
     sound.src = "assets/patapata.mp3";
+    about.src = "assets/happy.mp3";
+    video.src = "assets/janji.mp3";
   </script>
 </head>
 
@@ -106,9 +110,8 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" onmousemove="about.play(); video.pause();">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Kirti Chaturvedi</h2>
           <p>One line description of her. </p>
@@ -135,9 +138,18 @@
       </div>
     </section><!-- End About Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Liking it till now?</h3>
+          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
 
     <!-- ======= About Video Section ======= -->
-    <section id="about-video" class="about-video">
+    <section id="about-video" class="about-video" onmousemove="video.play(); about.pause();">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -168,9 +180,20 @@
       </div>
     </section><!-- End About Video Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Liking it till now?</h3>
+          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
+      
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -361,6 +384,15 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Liking it till now?</h3>
+          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
 
  <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -424,6 +456,15 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Liking it till now?</h3>
+          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
 
 
     <!-- ======= Team Section ======= -->
