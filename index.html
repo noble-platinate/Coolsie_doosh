@@ -39,9 +39,19 @@
     var sound= new Audio();
     var about= new Audio();
     var video= new Audio();
+    var team= new Audio();
+    var port = new Audio();
+    var test= new Audio();
+    var end= new Audio();
+    var faq= new Audio();
     sound.src = "assets/patapata.mp3";
     about.src = "assets/happy.mp3";
     video.src = "assets/janji.mp3";
+    port.src = "assets/chain.mp3";
+    team.src = "assets/bastille.mp3";
+    end.src = "assets/lock.mp3";
+    faq.src = "assets/see.mp3"
+    test.src = "assets/pay.mp3"
   </script>
 </head>
 
@@ -57,7 +67,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" onmousemove="end.pause(); about.pause(); port.pause(); video.pause(); test.pause(); team.pause(); faq.pause();">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
@@ -67,7 +77,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a href="#about" onmousedown="sound.play()" class="btn-get-started scrollto">Lessgoooo</a>
+        <a href="#about" class="btn-get-started scrollto">Lessgoooo</a>
       </div>
 
       <div class="row icon-boxes">
@@ -110,7 +120,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about" onmousemove="about.play(); video.pause();">
+    <section id="about" class="about" onmousemove="end.pause(); about.play(); port.pause(); video.pause(); test.pause(); team.pause(); faq.pause();">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Kirti Chaturvedi</h2>
@@ -132,10 +142,9 @@
             <p>
               A brief CV type description, what she is, what she can do, her qualities, etc etc. A brief CV type description, what she is, what she can do, her qualities, etc etc. A brief CV type description, what she is, what she can do, her qualities, etc etc. A brief CV type description, what she is, what she can do, her qualities, etc etc.
             </p>
-            <a href="#about-video" class="btn-learn-more">Let's move on</a>
+            <a href="#about-video"  class="btn-learn-more">Let's move on</a>
           </div>
         </div>
-
       </div>
       <br><br><br><br>
     </section><!-- End About Section -->
@@ -151,7 +160,12 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= About Video Section ======= -->
-    <section id="about-video" class="about-video" onmousemove="video.play(); about.pause();">
+    <section id="about-video" class="about-video" onmousemove="end.pause(); about.pause(); port.pause(); video.play(); test.pause(); team.pause(); faq.pause();">
+      <div class="section-title">
+        <h2>A video made by everyone on you</h2>
+        <p>Some random lines. Some random lines. Some random lines. Some random lines. Some random lines. Some random lines. Some random lines.</p>
+      <br>
+      </div>
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -162,7 +176,6 @@
           </div>
 
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>A video made by everyone on her</h3>
             <p class="fst-italic">
               Some thing about her. Some thing about her. Some thing about her. Some thing about her. Some thing about her. Some thing about her.
             </p>
@@ -180,22 +193,14 @@
         </div>
 
       </div>
-      <br><br>
+      <br><br><br>
+    <div class="text-center">
+      <a href="#testimonials" class="btn btn-primary" style="background: #2487ce;">Let's move on</a>
+    </div>
     </section><!-- End About Video Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3>Liking it till now?</h3>
-          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
-        </div>
-      </div>
-    </section><!-- End Cta Section -->
-
-
+    <br><br>
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" onmousemove="end.pause(); about.pause(); port.pause(); video.pause(); test.play(); team.pause(); faq.pause();">
       
       <div class="container" data-aos="fade-up">
 
@@ -266,6 +271,7 @@
                   Some random lines. Some random lines. Some random lines. Some random lines. Some random lines. Some random lines. Some random lines.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
+                <br>
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>Name of friend</h3>
                 <h4>Some cool nickname</h4>
@@ -275,23 +281,15 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
+      <br>
+      <div class="text-center">
+        <a href="#portfolio" class="btn btn-primary" style="background: #2487ce;">Let's move on</a>
+      </div>
       </div>
     </section><!-- End Testimonials Section -->
 
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3>Liking it till now?</h3>
-          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
-        </div>
-      </div>
-    </section><!-- End Cta Section -->
-
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" style="padding-top: 40px !important;" onmousemove="end.pause(); about.pause(); port.play(); video.pause(); test.pause(); team.pause(); faq.pause();">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -303,7 +301,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>What was she doing</h4>
               </div>
@@ -321,7 +319,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>What was she doing</h4>
               </div>
@@ -330,7 +328,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>What was she doing</h4>
               </div>
@@ -339,7 +337,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>What was she doing</h4>
               </div>
@@ -348,57 +346,21 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>What was she doing</h4>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>What was she doing</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>What was she doing</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>What was she doing</h4>
-              </div>
-            </div>
-          </div>
-
         </div>
-
+      </div>
+      <div class="text-center">
+        <a href="#faq" class="btn btn-primary" style="background: #2487ce;">Lets move on</a>
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3>Liking it till now?</h3>
-          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
-        </div>
-      </div>
-    </section><!-- End Cta Section -->
-
  <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <section id="faq" class="faq section-bg" onmousemove="end.pause(); about.pause(); port.pause(); video.pause(); test.pause(); team.pause(); faq.play();">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -453,25 +415,27 @@
               </div>
             </li>
 
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">some question some question some question some question some question<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Some answer some answer some answer some answer some answer some answer some answer some answer some answer some answer some answer some answer
+                </p>
+              </div>
+            </li>
+
           </ul>
         </div>
 
       </div>
+      <br>
+      <div class="text-center">
+        <a href="#team" class="btn btn-primary" style="background: #2487ce;">Let's move on</a>
+      </div>
     </section><!-- End Frequently Asked Questions Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3>Liking it till now?</h3>
-          <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
-        </div>
-      </div>
-    </section><!-- End Cta Section -->
-
-
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team" class="team section-bg" onmousemove="end.pause(); about.pause(); port.pause(); video.pause(); test.pause(); team.play(); faq.pause();">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -532,10 +496,26 @@
         </div>
 
       </div>
+      <br>
+      <div class="text-center">
+        <a href="#trophy" class="btn btn-primary" style="background: #2487ce;">Lastly</a>
+      </div>
+      <br><br><br><br>
     </section><!-- End Team Section -->
-
     <!-- ======= End Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="trophy" class="team section-bg" style="padding-top: 10px !important;" onmousemove="end.play(); about.pause(); port.pause(); video.pause(); test.pause(); team.pause(); faq.pause();">
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Conclusion</h3>
+            <p>Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment. Some random comment.</p>
+          </div>
+        </div>
+      </section><!-- End Cta Section -->
+      <br><br><br>
+
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
